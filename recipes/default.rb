@@ -56,8 +56,3 @@ template "zshrc4root" do
   group   "root"
   mode    0640
 end
-
-# Stop iptables (for vagrant)
-service "iptables" do
-  action [ :disable , :stop ]
-end
